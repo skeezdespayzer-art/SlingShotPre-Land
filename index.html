@@ -91,52 +91,40 @@
             height: 100%;
             position: absolute;
             opacity: 0;
-            animation: slide-fade 24s infinite; /* 24s = 8 GIF * 3s */
+            animation: slide-fade 15s infinite; /* 15s = 5 GIF * 3s */
             background-size: cover;
             background-position: center;
         }
 
         /* ЗАДАЕМ ПЕРЕРЫВЫ ДЛЯ КАЖДОГО GIF (СМЕНА КАЖДЫЕ 3 СЕК) */
-        /* === ВАШИ ТОЧНЫЕ НАЗВАНИЯ GIF-ФАЙЛОВ! === */
+        /* === ВАШИ 5 GIF-ФАЙЛОВ === */
         .slide:nth-child(1) {
-            background-image: url('video1.gif'); 
+            background-image: url('Slingshot1.gif'); /* 0% */
             animation-delay: 0s;
         }
         .slide:nth-child(2) {
-            background-image: url('video2.gif'); 
+            background-image: url('Slingshot2.gif'); /* 20% */
             animation-delay: 3s;
         }
         .slide:nth-child(3) {
-            background-image: url('video3.gif'); 
+            background-image: url('Slingshot3.gif'); /* 40% */
             animation-delay: 6s;
         }
         .slide:nth-child(4) {
-            background-image: url('video4.gif'); 
+            background-image: url('Slingshot4.gif'); /* 60% */
             animation-delay: 9s;
         }
         .slide:nth-child(5) {
-            background-image: url('video5.gif'); 
+            background-image: url('Slingshot5.gif'); /* 80% */
             animation-delay: 12s;
-        }
-        .slide:nth-child(6) {
-            background-image: url('video6.gif'); 
-            animation-delay: 15s;
-        }
-        .slide:nth-child(7) {
-            background-image: url('video7.gif'); 
-            animation-delay: 18s;
-        }
-        .slide:nth-child(8) {
-            background-image: url('video8.gif'); 
-            animation-delay: 21s;
         }
 
         /* АНИМАЦИЯ СМЕНЫ ВИДЕО */
         @keyframes slide-fade {
             0% { opacity: 0; }
             1% { opacity: 1; }  
-            11.5% { opacity: 1; } 
-            12.5% { opacity: 0; } 
+            18% { opacity: 1; } /* Держится дольше из-за 5 слайдов */
+            20% { opacity: 0; } /* 100%/5 = 20% */
             100% { opacity: 0; }
         }
         
@@ -173,11 +161,11 @@
         .avatar {
             width: 40px;
             height: 40px;
-            border-radius: 50%; /* Круглый аватар */
+            border-radius: 50%; 
             margin-right: 10px;
             background-size: cover;
             background-position: center;
-            border: 2px solid #FFD700; /* Золотая рамка */
+            border: 2px solid #FFD700; 
         }
         .model-name {
             font-weight: bold;
@@ -219,10 +207,7 @@
         <div class="slide"></div>
         <div class="slide"></div>
         <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-    </div>
+        </div>
     
     <a href="https://justlovedates.com/tds/ae?tdsId=s8403sid_r&tds_campaign=s8403sid&s1=int&utm_source=int&utm_sub=opnfnl&utm_term=bn&affid=dba65811&subid={subid}&subid2={subid2}&clickid={clickid}" id="main-button" class="blinking-button">
         YES! START FREE VIDEO & CHAT ACCESS
@@ -234,7 +219,7 @@
 
     <div id="chat-popup">
         <div id="chat-header">
-            <div class="avatar" style="background-image: url('avatar.gif');"></div>
+            <div class="avatar" style="background-image: url('Slingshot1.gif');"></div>
             <div class="model-name">Girl is typing...</div>
         </div>
         <div id="chat-message"></div>
@@ -277,8 +262,8 @@
         },
         // Germany / German
         'de': {
-            headline: "🚨 LETZTER ZUGANG! VIDEO & LIVE-CHAT! 🚨",
-            button: "JA! KOSTENLOSER ZUGANG ZU VIDEO & CHAT"
+            headline: "🚨 LETZTER ZУGANG! VIDEO & LIVE-CHAT! 🚨",
+            button: "JA! KOSTENЛОСЕР ZUGANG ZU VIDEO & CHAT"
         },
         // France / French
         'fr': {
