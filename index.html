@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATTENTION! Exclusive Live Access</title>
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-47RJPBEPPQ"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-24BXTX5B21"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-47RJPBEPPQ');
+      gtag('config', 'G-24BXTX5B21');
     </script>
     <style>
         body {
@@ -251,28 +251,30 @@
         'ru': {
             headline: "🚨 УСПЕЙ! ЭКСКЛЮЗИВНОЕ ВИДЕО И ЧАТ — БЕЗ ЦЕНЗУРЫ! 🚨",
             button: "ДА! ДОСТУП К ВИДЕО И ЧАТУ БЕСПЛАТНО",
-            safety: "100% БЕСПЛАТНО, БЕЗ РЕКЛАМЫ И ВИРУСОВ", // <-- ДОБАВЛЕНО
+            safety: "100% БЕСПЛАТНО, БЕЗ РЕКЛАМЫ И ВИРУСОВ",
             chat_msg_name: "Привет! Я Эмили. Жду твое сообщение, чтобы показать тебе свое видео. Поспеши, у меня мало времени!"
         },
         // Germany / German
         'de': {
             headline: "🚨 LETZTER ZUGANG! VIDEO & LIVE-CHAT! 🚨",
-            button: "JA! KOSTENLOSER ZУGANG ZU VIDEO & CHAT",
-            safety: "100% KOSTENLOSER, KEINE WERBUNG ODER VIREN", // <-- ДОБАВЛЕНО
+            // ИСПРАВЛЕНО: KOSTENLOSER ZUGANG
+            button: "JA! KOSTENLOSER ZUGANG ZU VIDEO & CHAT", 
+            // ИСПРАВЛЕНО: KOSTENLOS, БЕЗ КИРИЛЛИЦЫ И ЛИШНИХ R
+            safety: "100% KOSTENLOS, KEINE WERBUNG ODER VIREN", 
             chat_msg_name: "Hey! Ich bin Emily. Ich warte auf deine Nachricht, um dir mein Video zu zeigen. Beeil dich, ich habe nicht viel Zeit!"
         },
         // France / French
         'fr': {
             headline: "🚨 ACCÈS FINAL! VIDÉO ET CHAT EN DIRECT! 🚨",
             button: "OUI! ACCÈS GRATUIT AUX VIDÉOS ET AU CHAT",
-            safety: "100% GRATUIT, SANS PUB ET SANS VIRUS", // <-- ДОБАВЛЕНО
+            safety: "100% GRATUIT, SANS PUB ET SANS VIRUS",
             chat_msg_name: "Salut! Je suis Emily. J'attends ton message pour te montrer ma vidéo. Dépêche-toi, je n'ai pas beaucoup de temps!"
         },
         // Sweden / Swedish
         'sv': {
             headline: "🚨 SISTA CHАНСЕН! VIDEO OCH LIVE-CHATT! 🚨",
             button: "JA! GRATIS ÅTKOMST TILL VIDEO OCH CHATT",
-            safety: "100% GRATIS, INGEN REKLAM ELLER VIRUS", // <-- ДОБАВЛЕНО
+            safety: "100% GRATIS, INGEN REKLAM ELLER VIRUS",
             chat_msg_name: "Hej! Jag är Emily. Jag väntar på ditt meddelande för att visa dig min video. Skynda dig, jag har inte mycket tid!"
         }
     };
@@ -286,7 +288,6 @@
     // Установка текста
     document.getElementById('main-headline').textContent = translations[langCode]?.headline || defaultHeadline;
     document.getElementById('main-button').textContent = translations[langCode]?.button || defaultButtonText;
-    // Активация перевода для нового блока безопасности
     document.getElementById('safety-guarantee').textContent = translations[langCode]?.safety || defaultSafetyText;
     
     // Обновляем текст, который не переводится JS:
@@ -329,5 +330,3 @@
 
 </body>
 </html>
-
-
